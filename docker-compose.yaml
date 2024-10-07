@@ -1,0 +1,43 @@
+version: "3"
+
+services:
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #   volumes:
+  #     - ./frontend:/app
+  #   ports:
+  #     - "3000:3000"
+  #   # 「depends_on」はサービスの起動順番を定義する
+  #   depends_on:
+  #     - backend
+
+  backend:
+    build:
+      context: ./backend
+      # PIDファイル（RailsサーバーのプロセスID）の削除とサーバーの起動コマンド
+    command: bash -c "rm -f tmp/pids/server.pid && bundle exec rails s -b '0.0.0.0'"
+    # command: bash -c "rails new . --force --database=postgresql"
+
+    volumes:
+      - ./backend:/Recipy
+    ports:
+      - "3000:3000"
+    # depends_on:
+    #   - db
+    environment:
+      DATABASE_URL: postgres://recipy_sys:rec1234@db:5432/recipy_development
+
+  db:
+    image: postgres
+    environment:
+      POSTGRES_USER: recipy_sys
+      POSTGRES_PASSWORD: rec1234
+    volumes:
+      - ./tmp/db:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+networks:
+  app-network:
+    driver: bridge
