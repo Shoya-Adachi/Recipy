@@ -1,3 +1,4 @@
+/* :rootとはコンポーネントのようなもので、変数の定義 */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -13,6 +14,7 @@
 html,
 body {
   max-width: 100vw;
+  /* 横方向のオーバー分の制御をする。[hidden]の場合、はみ出した分は隠す*/
   overflow-x: hidden;
 }
 

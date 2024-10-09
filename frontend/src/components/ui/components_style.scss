@@ -1,0 +1,37 @@
+@mixin common-button {
+    font-size: 1rem;
+    font-weight: 800;
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+}
+
+@mixin common-form {
+    width: 250px;
+    height: 50px;
+    font-size: 1.5rem;
+    padding-left: 10px;
+    border: none;
+    border-radius: 10px;
+    &::placeholder{
+        font-size: 1rem
+    }
+}
+
+.login_button {
+    @include common-button;
+    background-color: #8FFF00;
+    width: auto;
+    min-width: 200px;
+    max-height: 60px;
+
+    &:active {
+        background-color: #3f5d17;
+    }
+}
+
+.login_form {
+    @include common-form;
+    background-color: white;
+    
+}

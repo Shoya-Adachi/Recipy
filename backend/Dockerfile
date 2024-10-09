@@ -1,6 +1,6 @@
 FROM ruby:3.3
 
-RUN apt-get update -qq && apt-get install -y curl gpg build-essential libssl-dev libreadline-dev zlib1g-dev libsqlite3-dev libffi-dev libyaml-dev nodejs yarn
+RUN apt-get update -qq && apt-get install -y curl gpg build-essential libssl-dev libreadline-dev zlib1g-dev libsqlite3-dev libffi-dev libyaml-dev nodejs yarn xdg-utils
 
 RUN mkdir /Recipy
 
