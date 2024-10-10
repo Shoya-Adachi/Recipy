@@ -1,4 +1,5 @@
 import "./login_style.scss"
+import "../../page/common_page_style.scss"
 import Button from "@/components/ui/button/button"
 import Input from "@/components/ui/form/form"
 import { useState } from "react" 
@@ -18,7 +19,7 @@ const Login = () => {
                 password: password
             })
             if (response.status === 200) {
-                router.push('/test')
+                router.push('/home')
             } 
         } catch (error) {
             console.log("失敗しました", error)

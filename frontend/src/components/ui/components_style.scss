@@ -33,6 +33,18 @@
     }
 }
 
+.TextIconButton {
+    display: flex;
+    gap: 5px;
+    button {
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 800;
+        border: none;
+        background-color: inherit;
+    }
+}
+
 .login_form {
     @include common-form;
     background-color: #ffffff;

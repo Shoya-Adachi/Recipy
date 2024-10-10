@@ -2497,3 +2497,112 @@ Processing by SessionsController#login as HTML
 Completed 200 OK in 266ms (Views: 0.1ms | ActiveRecord: 0.2ms (1 query, 0 cached) | GC: 0.0ms)
 
 
+Started POST "/api/login" for 172.29.0.1 at 2024-10-10 04:07:49 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Load (16.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/api/login" for 172.29.0.1 at 2024-10-10 04:07:49 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#login as HTML
+  Parameters: {"name"=>"shoya", "password"=>"[FILTERED]", "session"=>{"name"=>"shoya", "password"=>"[FILTERED]"}}
+Processing by SessionsController#login as HTML
+  Parameters: {"name"=>"shoya", "password"=>"[FILTERED]", "session"=>{"name"=>"shoya", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (11.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "shoya"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "shoya"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 200 OK in 663ms (Views: 0.5ms | ActiveRecord: 83.8ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+Completed 200 OK in 667ms (Views: 0.2ms | ActiveRecord: 10.0ms (1 query, 0 cached) | GC: 0.8ms)
+
+
+Started POST "/api/login" for 172.29.0.1 at 2024-10-10 04:22:07 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#login as HTML
+  Parameters: {"name"=>"shoya", "password"=>"[FILTERED]", "session"=>{"name"=>"shoya", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (3.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "shoya"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 401 Unauthorized in 339ms (Views: 0.7ms | ActiveRecord: 20.7ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 172.29.0.1 at 2024-10-10 04:22:13 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#login as HTML
+  Parameters: {"name"=>"shoya", "password"=>"[FILTERED]", "session"=>{"name"=>"shoya", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "shoya"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 200 OK in 254ms (Views: 0.2ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 172.29.0.1 at 2024-10-10 04:24:53 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#login as HTML
+  Parameters: {"name"=>"shoya", "password"=>"[FILTERED]", "session"=>{"name"=>"shoya", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "shoya"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 200 OK in 248ms (Views: 0.4ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 172.29.0.1 at 2024-10-10 04:41:13 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#login as HTML
+  Parameters: {"name"=>"shoya", "password"=>"[FILTERED]", "session"=>{"name"=>"shoya", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (6.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "shoya"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 200 OK in 346ms (Views: 0.2ms | ActiveRecord: 33.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 172.29.0.1 at 2024-10-10 06:04:49 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#login as HTML
+  Parameters: {"name"=>"shoya", "password"=>"[FILTERED]", "session"=>{"name"=>"shoya", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (6.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "shoya"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 200 OK in 386ms (Views: 0.6ms | ActiveRecord: 40.2ms (1 query, 0 cached) | GC: 8.8ms)
+
+
+Started POST "/api/login" for 172.29.0.1 at 2024-10-10 06:05:13 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#login as HTML
+  Parameters: {"name"=>"shoya", "password"=>"[FILTERED]", "session"=>{"name"=>"shoya", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "shoya"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 200 OK in 244ms (Views: 0.7ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 4.9ms)
+
+
+Started POST "/api/login" for 172.29.0.1 at 2024-10-10 06:06:03 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#login as HTML
+  Parameters: {"name"=>"shoya", "password"=>"[FILTERED]", "session"=>{"name"=>"shoya", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "shoya"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 200 OK in 269ms (Views: 0.3ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 172.29.0.1 at 2024-10-10 07:46:00 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#login as HTML
+  Parameters: {"name"=>"shoya", "password"=>"[FILTERED]", "session"=>{"name"=>"shoya", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (6.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "shoya"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 200 OK in 416ms (Views: 5.1ms | ActiveRecord: 42.6ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 172.29.0.1 at 2024-10-10 07:50:34 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#login as HTML
+  Parameters: {"name"=>"", "password"=>"[FILTERED]", "session"=>{"name"=>"", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", ""], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 401 Unauthorized in 34ms (Views: 0.5ms | ActiveRecord: 0.4ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/api/login" for 172.29.0.1 at 2024-10-10 07:50:45 +0000
+Cannot render console from 172.29.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#login as HTML
+  Parameters: {"name"=>"shoya", "password"=>"[FILTERED]", "session"=>{"name"=>"shoya", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = $1 LIMIT $2[0m  [["name", "shoya"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `login'
+Completed 200 OK in 246ms (Views: 0.5ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
