@@ -15,6 +15,9 @@ services:
     environment:
       - WATCHPACK_POLLING=true
 
+    networks:
+      - app-network
+
     stdin_open: true
     tty: true
 
@@ -28,11 +31,14 @@ services:
     volumes:
       - ./backend:/Recipy
     ports:
-      - "3001:3001"
-    # depends_on:
-    #   - db
+      - "3001:3000"
+    depends_on:
+      - db
     environment:
       DATABASE_URL: postgres://recipy_sys:rec1234@db:5432/recipy_development
+
+    networks:
+      - app-network
 
   db:
     image: postgres
@@ -42,7 +48,11 @@ services:
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
     ports:
-      - "5432:5432"
+      - "15433:5432"
+
+    networks:
+      - app-network
+
 
 networks:
   app-network:

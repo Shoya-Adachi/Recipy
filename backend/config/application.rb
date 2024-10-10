@@ -23,5 +23,17 @@ module Recipy
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.middleware.insert_before 0, Rack::Cors do
+      allow do
+        origins '*' # または特定のオリジンを指定 (例: 'http://localhost:3000')
+        resource '*',
+          headers: :any,
+          methods: [:get, :post, :put, :delete, :options, :head]
+      end
+    end
+    
   end
 end
+
+
