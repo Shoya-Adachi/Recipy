@@ -1,0 +1,48 @@
+:root {
+    --text: #ffffff;
+    --main: #E78728;
+    --error: #FF0303;
+}
+
+.page_whole {
+    display: flex;
+}
+
+.title_section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+        color: var(--main);
+        font-size: 5rem;
+        font-weight: bold;
+    }
+}
+
+.login_section {
+    width: 50%;
+    height: 100vh;
+    background-color: var(--main);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    h1 {
+        color: var(--text);
+    }
+
+    p {
+        font-size: 1rem;
+        color: var(--error);
+    }
+
+    .form {
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        gap: 20px;
+    }
+}
